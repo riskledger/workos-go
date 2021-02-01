@@ -1,4 +1,4 @@
-module github.com/workos-inc/workos-go
+module github.com/riskledger/workos-go
 
 go 1.13
 

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/riskledger/workos-go/pkg/common"
 	"github.com/stretchr/testify/require"
-	"github.com/workos-inc/workos-go/pkg/common"
 )
 
 func TestClientAuthorizeURL(t *testing.T) {
