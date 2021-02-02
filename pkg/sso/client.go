@@ -488,7 +488,9 @@ func (c *Client) ListConnections(
 	q := req.URL.Query()
 	q.Add("before", opts.Before)
 	q.Add("after", opts.After)
-	q.Add("connection_type", string(opts.ConnectionType))
+	if opts.ConnectionType != "" {
+		q.Add("connection_type", string(opts.ConnectionType))
+	}
 	q.Add("organization_id", string(opts.OrganizationID))
 	q.Add("domain", opts.Domain)
 	q.Add("limit", strconv.Itoa(limit))
